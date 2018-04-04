@@ -23,7 +23,8 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
-
+    binding.pry
+    "Welcome #{session[:user_id]}"
   end
 
   get '/logout' do
