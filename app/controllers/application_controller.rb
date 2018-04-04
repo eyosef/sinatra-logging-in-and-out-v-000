@@ -27,7 +27,7 @@ class ApplicationController < Sinatra::Base
     if @user == nil
       erb :error
     else
-      redirect to 'account'
+      erb :account
     end
   end
 
