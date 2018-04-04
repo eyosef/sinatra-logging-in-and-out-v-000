@@ -20,16 +20,6 @@ class ApplicationController < Sinatra::Base
     else
       redirect to '/'
     end
-
-
-
-    # @user = User.find(params[:username])
-    # if @user = User.find_by
-    #   session[:user_id] = @user.id
-    #   erb :'/account'
-    # else
-    #   erb :'/'
-    # end
   end
 
   get '/account' do
