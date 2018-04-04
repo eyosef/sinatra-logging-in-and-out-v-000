@@ -32,7 +32,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/logout' do
-    @user = User.find_by_id(session[:user_id])
+    session.clear
 
 
     #<User:0x000000040fa6c8
