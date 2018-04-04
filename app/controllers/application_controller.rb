@@ -26,7 +26,7 @@ class ApplicationController < Sinatra::Base
     @user = User.find_by_id(session[:user_id])
     if @user == nil
       erb :error
-    else
+    elsif Helper.is_logged_in?(user)
       erb :account
     end
   end
