@@ -23,7 +23,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
-    "Welcome #{@user.username}"
+
   end
 
   get '/logout' do
