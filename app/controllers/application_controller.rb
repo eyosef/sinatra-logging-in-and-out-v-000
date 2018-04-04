@@ -22,9 +22,6 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
-    @user = User.new
-    @user.username = params[:username]
-    @user.password = params[:password]
     binding.pry
     erb :account
   end
