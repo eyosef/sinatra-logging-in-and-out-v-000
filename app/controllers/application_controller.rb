@@ -24,6 +24,7 @@ class ApplicationController < Sinatra::Base
 
   get '/account' do
     "Welcome #{@user.username}"
+    erb :'account'
   end
 
   get '/logout' do
