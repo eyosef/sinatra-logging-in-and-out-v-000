@@ -35,12 +35,6 @@ class ApplicationController < Sinatra::Base
     session.clear
 
     redirect to '/'
-
-    #<User:0x000000040fa6c8
-    # id: 1,
-    # username: "skittles123",
-    # password: "iluvskittles",
-    # balance: 1000>
   end
 
 
