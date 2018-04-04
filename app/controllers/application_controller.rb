@@ -33,7 +33,7 @@ class ApplicationController < Sinatra::Base
 
   get '/logout' do
     @user = User.find_by_id(session[:user_id])
-    binding.pry
+
 
     #<User:0x000000040fa6c8
     # id: 1,
