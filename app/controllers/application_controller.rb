@@ -23,8 +23,8 @@ class ApplicationController < Sinatra::Base
 
   get '/account' do
     @user = User.new
-    @user.name =
-    
+    @user.username =
+
     binding.pry
     erb :account
   end
