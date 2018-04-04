@@ -24,7 +24,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
-    "Welcome #{session[:user_id]}"
+    "Welcome #{@user.username}"
   end
 
   get '/logout' do
