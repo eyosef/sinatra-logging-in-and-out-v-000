@@ -22,6 +22,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
+    @user = User.find_by()
     binding.pry
     erb :account
   end
