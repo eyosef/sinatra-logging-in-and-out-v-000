@@ -16,6 +16,7 @@ class ApplicationController < Sinatra::Base
 
     if @user.password == params[:password]
       session[:id] = @user.id
+      return session[:id]
       redirect to '/account'
     else
       redirect to '/'
